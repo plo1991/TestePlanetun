@@ -1,0 +1,13 @@
+<div>
+  <h2>Tabuada</h2>
+  <label for="numeros">Insira uma lista de números (separados por vírgula): </label>
+  <input type="text" class="form-control" id="numeros" [(ngModel)]="numeros" />
+  <button type="button" class="btn btn-outline-success" (click)="processarTabuada()">Processar</button>
+</div>
+
+<div *ngIf="resultados.length > 0">
+  <h3>Resultados:</h3>
+  <ul>
+    <li *ngFor="let resultado of resultados">{{ resultado }}</li>
+  </ul>
+</div>

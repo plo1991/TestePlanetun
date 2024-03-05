@@ -1,0 +1,6 @@
+@Teste_Planetun.Server_HostAddress = http://localhost:5020
+
+GET {{Teste_Planetun.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
